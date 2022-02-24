@@ -30,7 +30,7 @@ module.exports = {
 				],
 			},
 			{
-				test: /\.s[ac]ss$/i,
+				test: /\.(css|scss)$/,
 				use: ["style-loader", "css-loader", "sass-loader"],
 			},
 		],
@@ -43,10 +43,10 @@ module.exports = {
 		new MiniCssExtractPlugin({
 			filename: "[name].css",
 		}),
-	],
+	] /*
 	devServer: {
 		static: path.join(__dirname, "dist"),
 		static: true,
 		port: 3005,
-	},
+	},*/,
 };
