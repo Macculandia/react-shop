@@ -17,7 +17,9 @@ const MyOrder = () => {
 		<aside className="MyOrder">
 			<div className="title-container">
 				<img src={arrow} alt="arrow" onClick={() => toggleOrder()} />
-				<p className="title">My Order</p>
+				<p className="title" onClick={() => toggleOrder()}>
+					My Order
+				</p>
 			</div>
 			<div className="my-order-content">
 				{state.cart.map((product, index) => (
