@@ -15,6 +15,7 @@
 	transition: 1s ease;
 	animation: swipeLeft 1s ease forwards;
 }
+
 .title-container {
 	display: flex;
 }
@@ -59,6 +60,29 @@
 	font-size: var(--md);
 	font-weight: bold;
 	height: 50px;
+}
+.my-order-content {
+	overflow-y: scroll;
+	max-height: 400px;
+}
+/* width */
+.my-order-content::-webkit-scrollbar {
+	width: 10px;
+}
+
+/* Track */
+.my-order-content::-webkit-scrollbar-track {
+	background: #f1f1f1;
+}
+
+/* Handle */
+.my-order-content::-webkit-scrollbar-thumb {
+	background: #888;
+}
+
+/* Handle on hover */
+.my-order-content::-webkit-scrollbar-thumb:hover {
+	background: #555;
 }
 @keyframes swipeLeft {
 	100% {
